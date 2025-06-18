@@ -4,7 +4,7 @@ Este é o backend da aplicação desenvolvida para o **Desafio MB**, utilizando 
 
 ---
 
-## 🚀 Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 - [Node.js]
 - [Express]
@@ -12,7 +12,7 @@ Este é o backend da aplicação desenvolvida para o **Desafio MB**, utilizando 
 
 ---
 
-## ✅ Pré-requisitos
+## Pré-requisitos
 
 Antes de rodar o projeto, certifique-se de ter instalado:
 
@@ -21,7 +21,7 @@ Antes de rodar o projeto, certifique-se de ter instalado:
 
 ---
 
-## ▶️ Como rodar o projeto
+## ▶ Como rodar o projeto
 
 1. **Clone o repositório:**
 
