@@ -1,7 +1,32 @@
 import express from "express";
 
 const router = express.Router();
-const registros = [];
+const registros = [
+  {
+    tipoDePessoa: 1,
+    nome: "",
+    razaoSocial: "Mercado Bitcoin",
+    email: "josealmirsla@gmail.com",
+    password: "1234567",
+    cnpj: "99.906.622/0001-40",
+    cpf: "",
+    dataNascimento: "",
+    dataAbertura: "2025-06-18",
+    telefone: "(11) 96638-9057",
+  },
+  {
+    tipoDePessoa: 0,
+    nome: "José almir",
+    razaoSocial: "",
+    email: "josealmirsla@gmail.com",
+    password: "1234567",
+    cnpj: "",
+    cpf: "221.777.270-81",
+    dataNascimento: "2025-06-18",
+    dataAbertura: "",
+    telefone: "(11) 96638-9057",
+  },
+];
 router.post("/registration", async (req, res) => {
   try {
     const {
@@ -38,14 +63,14 @@ router.post("/registration", async (req, res) => {
     } else {
       return res.status(400).json({ message: "Tipo de pessoa inválido." });
     }
-    registros.push(req.body);
+
     res.status(201).json({ message: "Cadastro realizado com sucesso!" });
   } catch (error) {
     res.status(500).json({ message: "Erro no servidor!" });
   }
 });
 
-router.get("/GetRegistration", (req, res) => {
+router.get("/registration", (req, res) => {
   try {
     res.status(200).json(registros);
   } catch (error) {
